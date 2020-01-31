@@ -32,4 +32,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * 2 - Components
 * 3 - Conditions & Templates
 * 4 - Interface, enum & casting
-* 5 - Atributos, eventos & ngModel
+* 5 - Atributes, events & ngModel
