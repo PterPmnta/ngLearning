@@ -19,4 +19,4 @@ import { UserComponent } from './Components/user/user.component';
 export class AppModule { }
 
 
-//import { HeaderComponent } from './Components/header/header.component';
+//import { HeaderComponent } from './Components/header/header.component';import { Usuario } from './Components/others/interface';

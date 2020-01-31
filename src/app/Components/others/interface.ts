@@ -4,5 +4,12 @@ export interface Usuario {
     Apellido: string,
     Correo: String,
     Nick: string,
-    Contraseña: string
+    Contraseña: string,
+    Tipo: UserType
+}
+
+export enum UserType {
+    Administrador,
+    Cliente,
+    Tecnico
 }
