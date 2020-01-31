@@ -30,4 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * 1 - Install and Project creation
 * 2 - Components
-* 3 - 
+* 3 - Conditions & Templates
+* 4 - 

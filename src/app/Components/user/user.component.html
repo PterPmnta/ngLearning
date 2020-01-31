@@ -1,3 +1,31 @@
-<p>
-  user works!
-</p>
+
+<ng-container *ngIf="!islogged; else logIn">
+
+  <button (click)="islogged = true">Iniciar sesion</button>
+
+  <button>Registrarse</button>
+
+<br>
+<br>
+
+  <button (click)="nivel = nivel + 1">Subir nivel</button>
+
+  <label>Nivel actual:{{ nivel }}</label>
+
+  <br>
+  <br>
+
+</ng-container>
+
+<ng-template #logIn>
+
+  <button>Administracion</button>
+  <button>Perfil</button>
+  <button>Caja</button>
+  <button (click)="islogged = false">Cerrar sesion</button>
+
+</ng-template>
+
+<button *ngIf="nivel>=10">Habitacion VIP</button>
+
+
