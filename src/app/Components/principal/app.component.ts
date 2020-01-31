@@ -12,10 +12,6 @@ export class AppComponent {
 
   title = 'ngLearning';
 
-  constructor(){
-    console.log(this.user_3.Id);
-  }
-
   user: Usuario = {
     Id: 12345,
     Nombre: 'Necro',
@@ -54,5 +50,9 @@ export class AppComponent {
     Contraseña: '1254hgyet',
     Tipo: UserType.Tecnico
   } as Usuario;
+
+  mostrarDatos(): void {
+    console.log(this.user_3.Id);
+  }
 
 }
