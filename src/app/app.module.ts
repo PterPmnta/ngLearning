@@ -3,20 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './Components/principal/app.component';
 import { UserComponent } from './Components/user/user.component';
+import {Parte5Component} from './Components/parte5/parte5.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    Parte5Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-//import { HeaderComponent } from './Components/header/header.component';import { Usuario } from './Components/others/interface';

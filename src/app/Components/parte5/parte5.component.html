@@ -1,0 +1,28 @@
+<button [type]="tipo" [disabled]="desactivado">Proyectos</button>
+
+<button (click)="desactivado=!desactivado">Descativar</button>
+
+<br>
+<br>
+<input placeholder="Titulo 1" type="text" [ngModel]="titulo" (ngModelChange)="log($event)"> <!--De esta forma lo que esta en la varible se pasa al input-->
+
+<br>
+<br>
+<button (click)="alerta()">Mostrar Info</button>
+<input placeholder="Titulo 2" type="text" (ngModel)="titulo2"> <!--De esta forma se asigna a la variable lo que se ha escrito-->
+
+<br>
+<br>
+<input placeholder="Titulo 3" type="text" [(ngModel)]="titulo3"> <!--Asi de esta forma se activa el binding-->
+<h3>El titulo de la pelicula es: {{ titulo3 }}</h3>
+
+<br>
+<br>
+
+<select [(ngModel)]="seleccion">
+  <option value="Toyota">Toyota</option>
+  <option value="Kia">Kia</option>
+  <option value="Ferrari">Ferrari</option>
+</select>
+
+<h3>Auto seleccionado: {{ seleccion }}</h3>
