@@ -21,8 +21,8 @@ export class LoginComponent implements OnInit {
 
   login() {
 
-    this.usuario = (document.querySelector('#user') as HTMLInputElement).value
-    this.password = (document.querySelector('#password') as HTMLInputElement).value
+    this.usuario = (document.querySelector('#user') as HTMLInputElement).value;
+    this.password = (document.querySelector('#password') as HTMLInputElement).value;
 
     this.apiService.login(this.usuario, this.password).subscribe(Response => {
 

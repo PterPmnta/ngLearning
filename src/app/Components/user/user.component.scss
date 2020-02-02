@@ -1,0 +1,12 @@
+:host{
+  justify-content: space-between;
+  display: flex;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+div button{
+  margin-top: 32px;
+}

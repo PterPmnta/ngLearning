@@ -1,5 +1,6 @@
 
-<ng-container *ngIf="!islogged; else logIn">
+
+<!--<ng-container *ngIf="!islogged; else logIn">
 
   <button (click)="islogged = true">Iniciar sesion</button>
 
@@ -27,5 +28,17 @@
 </ng-template>
 
 <button *ngIf="nivel>=10">Habitacion VIP</button>
+-->
 
+
+<ul class="left">
+  <li>{{ user.id }}</li>
+  <li>{{ user.nombre }}</li>
+  <li>{{ user.nick }}</li>
+  <li>{{ user.email }}</li>
+</ul>
+
+<div class="right" >
+  <button (click)="BorrarUsuario(user.id)">Borrar</button>
+</div>
 

@@ -7,10 +7,17 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-login></app-login>
+
+<h2>@Input & @Output</h2>
+
+<app-user [data]="user" *ngFor="let user of users"></app-user>
 
 <!--
+
 <style>
+
+  <app-user [data]="user" (borrar)="borrarUsuario(user.id)" *ngFor="let user of users"></app-user>
+
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;

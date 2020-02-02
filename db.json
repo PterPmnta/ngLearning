@@ -1,0 +1,29 @@
+{"posts":
+  [
+    {
+    "id": 1,
+    "nombre": "Pedro",
+    "nick": "PterPmnta",
+    "email": "correo@empresa.com"
+    },
+    {
+    "id": 2,
+    "nombre": "Juan",
+    "nick": "JPL",
+    "email": "correo@empresa.com"
+    },
+    {
+    "id": 3,
+    "nombre": "Isaac",
+    "nick": "SDP",
+    "email": "correo@empresa.com"
+    },
+    {
+    "id": 4,
+    "nombre": "Other",
+    "nick": "OT",
+    "email": "correo@empresa.com"
+    }
+  ]
+}
+

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Usuario, UserType } from '../others/interface';
+import { HttpClient } from '@angular/common/http';
+
 
 
 @Component({
@@ -8,7 +10,30 @@ import { Usuario, UserType } from '../others/interface';
   styleUrls: ['./app.component.sass']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  constructor(private http: HttpClient) {
+
+  }
+
+  apiUrl = ' https://my-json-server.typicode.com/PterPmnta/demo/posts/';
+  users: any = [];
+
+
+  ngOnInit() {
+    this.http.get(this.apiUrl).subscribe(datos => {
+      this.users = datos;
+    });
+  }
+
+  /*
+  borrarUsuario(id: number) {
+    this.users = this.users.filter(usuario => usuario.id !== id);
+  }
+
+  */
+
+  /*
 
   title = 'ngLearning';
 
@@ -54,5 +79,7 @@ export class AppComponent {
   mostrarDatos(): void {
     console.log(this.user_3.Id);
   }
+
+  */
 
 }
