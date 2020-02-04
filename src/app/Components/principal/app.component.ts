@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario, UserType } from '../others/interface';
 import { HttpClient } from '@angular/common/http';
-
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -10,13 +10,26 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.sass']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  constructor(private http: HttpClient) {
-
+  constructor(private builder: FormBuilder) {
+    this.formularioRegistro = this.builder.group({
+      nombre: [''],
+      usuario: ['', Validators.required],
+      email: ['', Validators.compose([Validators.email, Validators.required])],
+      clave: ['', Validators.required]
+    });
   }
 
-  apiUrl = ' https://my-json-server.typicode.com/PterPmnta/demo/posts/';
+  formularioRegistro: FormGroup;
+
+  enviar(values: any) {
+    console.log(values);
+  }
+
+
+
+/*  apiUrl = ' https://my-json-server.typicode.com/PterPmnta/demo/posts/';
   users: any = [];
 
 
@@ -24,7 +37,7 @@ export class AppComponent implements OnInit {
     this.http.get(this.apiUrl).subscribe(datos => {
       this.users = datos;
     });
-  }
+  } */
 
   /*
   borrarUsuario(id: number) {
