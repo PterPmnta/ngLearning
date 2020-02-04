@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter, Host } from '@angular/core';
 import { Usuario } from '../others/interface';
 import { AppComponent } from '../principal/app.component';
+import { ApiService } from '@services/api.service'; // CReacion de alias para evitar rutas extensas anidadas
 
 
 @Component({
@@ -16,13 +17,13 @@ export class UserComponent {
   // @Output() borrar = new EventEmitter<number>();
 
   constructor(@Host() private app: AppComponent) {}
-
+/*
   BorrarUsuario(id: number) {
     // this.borrar.emit(id);
     this.app.users = this.app.users.filter(user => {
       return user.id !== id;
     });
-  }
+  } */
 
   /*isLogged: boolean = false;
   nivel: number = 5;*/
