@@ -21,6 +21,8 @@ export class AppComponent {
     });
   }
 
+  titulo = 'Probando Directivas';
+
   formularioRegistro: FormGroup;
 
   enviar(values: any) {

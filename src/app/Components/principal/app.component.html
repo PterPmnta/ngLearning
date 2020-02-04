@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
+<!--
 <h1>Formularios reactivos</h1>
 
 <form [formGroup]="formularioRegistro" (ngSubmit)="enviar(formularioRegistro.value)">
@@ -36,6 +36,10 @@
   </button>
 
 </form>
+
+-->
+
+<span [appMiDirectiva]="false" color="orange" [underline]="true">{{ titulo }}</span>
 
 <!--
 

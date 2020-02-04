@@ -7,6 +7,8 @@ import {Parte5Component} from './Components/parte5/parte5.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {LoginComponent} from './Components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MiDirectivaDirective } from './directives/miDirectiva.directive';
+
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     UserComponent,
     Parte5Component,
-    LoginComponent
+    LoginComponent,
+    MiDirectivaDirective
   ],
   imports: [
     BrowserModule,
