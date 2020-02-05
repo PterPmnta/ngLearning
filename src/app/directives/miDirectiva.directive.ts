@@ -16,7 +16,7 @@ export class MiDirectivaDirective implements OnInit {
   ngOnInit() {
     console.log(`color: ${this.color} , underline: ${this.underline}`);
     this.render.setStyle(this.elmentRef.nativeElement, 'color', this.color);
-    this.render.setStyle(this.elmentRef.nativeElement, 'text-decoration', this.underline ? 'underlaine' : '');
+    this.render.setStyle(this.elmentRef.nativeElement, 'text-decoration', this.underline ? 'underline' : '');
   }
 
   /* color: boolean;
